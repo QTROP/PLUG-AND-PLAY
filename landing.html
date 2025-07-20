@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QTROP Trading - Plug and Play</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .dollar-animation {
+      font-size: 60px;
+      animation: float 2s infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    #buttons2335 {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .option-btn {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      background-color: #3b82f6;
+      color: white;
+      border-radius: 12px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .option-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Landing screen -->
+  <div id="landing">
+    <h1>Welcome to Binary Trading by <strong>QTROP</strong></h1>
+    <div class="dollar-animation">💸💸💸💸💸💸💸💸💸</div>
+  </div>
+
+  <!-- 2335 buttons -->
+  <div id="buttons2335">
+    <button class="option-btn">2</button>
+    <button class="option-btn">3</button>
+    <button class="option-btn">3</button>
+    <button class="option-btn">5</button>
+  </div>
+
+  <!-- JavaScript to hide landing and show buttons -->
+  <script>
+    setTimeout(() => {
+      document.getElementById("landing").style.display = "none";
+      document.getElementById("buttons2335").style.display = "block";
+    }, 10000); // 10 seconds
+  </script>
+</body>
+</html>
